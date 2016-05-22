@@ -1,2 +1,14 @@
 <h1>Pages#angulartest</h1>
 <p>Find me in app/views/pages/angulartest.html.erb</p>
+
+<div ng-app="app">
+  <div ng-controller="exampleCtrl">
+    <ul>
+      <li ng-repeat="message in messages">{{ message }}
+        <input ng-model="message">
+        <p>{{ message + " is cool" }}</p>
+      </li>
+      <p></p>
+    </ul>
+  </div>
+</div>
