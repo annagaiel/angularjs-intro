@@ -4,11 +4,11 @@
 <div ng-app="app">
   <div ng-controller="exampleCtrl">
     <ul>
-      <li ng-repeat="message in messages">{{ message }}
-        <input ng-model="message">
-        <p>{{ message + " is cool" }}</p>
+      <li ng-repeat="message in messages" ng-click="alertMe(message)">
+        {{ message }}
       </li>
-      <p></p>
+      <input ng-model="message">
+      <button ng-click="addMessage(message)">Add Message</button>
     </ul>
   </div>
 </div>
